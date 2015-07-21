@@ -6,6 +6,7 @@ class Hyv < Formula
 
   depends_on :macos => :yosemite
   depends_on :python3
+  depends_on "xhyve"
 
   def install
     bin.install "hyv"
