@@ -1,12 +1,12 @@
 class Hyv < Formula
   desc "CLI tool to easily run xhyve VMs"
-  url "https://github.com/rahulg/hyv/archive/0.4.0.tar.gz"
-  sha256 "cbb6b67b3aae3a064610ec41c02544e97aa4bcc9c934ed364bdeef7378c27f9b"
+  url "https://github.com/rahulg/hyv/archive/0.5.0.tar.gz"
+  sha256 "59aace092414d79bf3cb9ccc68f5a1741d1995e56ca0460b2bd7b4121947d1bf"
   head "https://github.com/rahulg/hyv.git"
 
   depends_on :macos => :yosemite
   depends_on :python3
-  depends_on "xhyve"
+  depends_on "xhyve" => :optional
 
   def install
     bin.install "hyv"
