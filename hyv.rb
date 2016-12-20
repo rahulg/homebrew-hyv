@@ -1,7 +1,7 @@
 class Hyv < Formula
   desc "CLI tool to easily run xhyve VMs"
-  url "https://github.com/rahulg/hyv/archive/0.6.1.tar.gz"
-  sha256 "3955d59d4be8d4e6f8a20642af96338e7cebf9da3806c6c9109138c6e2fb709e"
+  url "https://github.com/rahulg/hyv/archive/0.7.0.tar.gz"
+  sha256 "13f4113093355ff38c9d181f779c5051d0ea9d1551b0028611a438dce626dc1c"
   head "https://github.com/rahulg/hyv.git"
 
   depends_on :macos => :yosemite
@@ -10,15 +10,6 @@ class Hyv < Formula
 
   def install
     bin.install "hyv"
-  end
-
-  def caveats; <<-EOS.undent
-    If you're upgrading from versions older than 0.3.0, note that hyv now uses
-    ini-style configuration files.
-
-    You can generate a new config.hyv with:
-      hyv --new
-    EOS
   end
 
   test do
