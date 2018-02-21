@@ -5,7 +5,7 @@ class Hyv < Formula
   head "https://github.com/rahulg/hyv.git"
 
   depends_on :macos => :yosemite
-  depends_on :python3
+  depends_on "python3"
   depends_on "xhyve" => :optional
 
   def install
